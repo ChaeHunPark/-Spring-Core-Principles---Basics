@@ -5,8 +5,12 @@ package Hello.core.member;
 public class MemberServiceImpl implements MemberService{
 
 
-    //DIP 위반중이다.
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    // 이제는 추상화에만 의존중이다.
+    private final MemberRepository memberRepository;
+
+    public MemberServiceImpl(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
 
     @Override
     public void join(Member member) {
