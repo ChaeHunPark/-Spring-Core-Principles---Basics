@@ -1,4 +1,4 @@
-package Hello.core.beanfind;
+package beanfind;
 
 import Hello.core.discount.DiscountPolicy;
 import Hello.core.discount.FixDiscountPolicy;

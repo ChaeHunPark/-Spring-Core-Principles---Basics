@@ -1,4 +1,4 @@
-package Hello.core.beanfind;
+package beanfind;
 
 import Hello.core.member.MemberRepository;
 import Hello.core.member.MemoryMemberRepository;
